@@ -20,10 +20,21 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-         View::share([
-        'cartCount' => Cart::count(),
-        'cartTotal' => Cart::sum('total'),
+  View::share([
+        'cartCount' => 0,
+        'cartTotal' => 0,
     ]);
+
+    $this->app->booted(function () {
+        try {
+            View::share([
+                'cartCount' => Cart::count(),
+                'cartTotal' => Cart::sum('total'),
+            ]);
+        } catch (\Exception $e) {
+            // Database not ready yet
+        }
+    });
         //
     }
 }
