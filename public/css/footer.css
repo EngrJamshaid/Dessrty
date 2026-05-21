@@ -1,0 +1,146 @@
+
+
+        /* ===== FOOTER ===== */
+        .tb-footer {
+            background: #0d0d0d;
+            border-top: 1px solid rgba(180, 100, 60, 0.25);
+            padding: 60px 0 30px;
+            color: #ccc;
+        }
+
+        /* Cursive Brand Headings */
+        .tb-footer-heading {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            color: #c87856;
+            margin-bottom: 20px;
+        }
+
+        /* Description text */
+        .tb-footer-desc {
+            font-size: 0.88rem;
+            color: #aaa;
+            line-height: 1.8;
+            max-width: 480px;
+        }
+
+        /* License */
+        .tb-license {
+            font-size: 0.82rem;
+            color: #888;
+            margin-top: 18px;
+        }
+
+        /* Register Now Button */
+        .tb-register-btn {
+            display: inline-block;
+            border: 1px solid #c87856;
+            color: #c87856;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            padding: 16px 48px;
+            text-decoration: none;
+            margin-top: 24px;
+            margin-bottom: 28px;
+            transition: background 0.25s, color 0.25s;
+        }
+        .tb-register-btn:hover {
+            background: #c87856;
+            color: #fff;
+        }
+
+        /* Footer bottom links */
+        .tb-footer-policy a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.82rem;
+            display: block;
+            margin-bottom: 10px;
+            transition: color 0.2s;
+        }
+        .tb-footer-policy a:hover { color: #c87856; }
+
+        /* Quick Links */
+        .tb-quick-links { list-style: none; padding: 0; margin: 0; }
+        .tb-quick-links li { margin-bottom: 14px; }
+        .tb-quick-links a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.88rem;
+            transition: color 0.2s, padding-left 0.2s;
+            display: inline-block;
+        }
+        .tb-quick-links a:hover {
+            color: #c87856;
+            padding-left: 6px;
+        }
+
+        /* Social Icons — diamond shape */
+        .tb-social-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 0;
+        }
+        .tb-social-icon {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 1rem;
+            text-decoration: none;
+            transform: rotate(45deg);
+            transition: border-color 0.25s, color 0.25s, background 0.25s;
+        }
+        .tb-social-icon i { transform: rotate(-45deg); }
+        .tb-social-icon:hover {
+            border-color: #c87856;
+            color: #c87856;
+            background: rgba(200, 120, 86, 0.08);
+        }
+
+        /* Divider */
+        .tb-footer-divider {
+            border-color: rgba(180, 100, 60, 0.15);
+            margin: 36px 0 20px;
+        }
+
+        /* Copyright */
+        .tb-copyright {
+            font-size: 0.8rem;
+            color: #666;
+            text-align: center;
+        }
+        .tb-copyright a {
+            color: #c87856;
+            text-decoration: none;
+        }
+
+        /* Scroll to top */
+        .tb-scroll-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 44px;
+            height: 44px;
+            background: #c87856;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            z-index: 999;
+        }
+        .tb-scroll-top.show { opacity: 1; pointer-events: auto; }
+        .tb-scroll-top:hover { background: #b56840; }
+  

@@ -1,0 +1,28 @@
+
+.category-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+/* FIX IMAGE SIZE */
+.category-img-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.category-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* IMPORTANT: prevents stretching */
+    transition: 0.3s ease;
+}
+
+.category-card:hover .category-img {
+    transform: scale(1.05);
+}

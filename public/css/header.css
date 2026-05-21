@@ -1,0 +1,311 @@
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #111;
+        }
+
+        /* ---- HEADER ---- */
+        .tb-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: rgba(15, 15, 15, 0.96);
+            border-bottom: 1px solid rgba(212, 168, 71, 0.2);
+        }
+
+        .tb-logo {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+        }
+
+        /* Nav links */
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 8px 14px !important;
+            transition: color 0.25s;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #D4A847 !important;
+        }
+
+        /* Dropdown */
+        .dropdown-menu {
+            background: #1a1a1a;
+            border: 1px solid rgba(212, 168, 71, 0.2);
+            border-radius: 8px;
+            padding: 8px;
+            min-width: 200px;
+        }
+
+        .dropdown-item {
+            color: #eee !important;
+            font-size: 0.83rem;
+            padding: 9px 14px;
+            border-radius: 5px;
+            transition: background 0.2s, padding-left 0.2s;
+        }
+
+        .dropdown-item i {
+            color: #D4A847;
+            width: 18px;
+        }
+
+        .dropdown-item:hover {
+            background: rgba(212, 168, 71, 0.12) !important;
+            color: #D4A847 !important;
+            padding-left: 20px;
+        }
+
+        .dropdown-divider {
+            border-color: rgba(212, 168, 71, 0.15);
+        }
+
+        /* Hover open on desktop */
+        @media (min-width: 992px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-menu {
+                margin-top: 0;
+            }
+        }
+
+        /* Cart */
+        .tb-cart {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.84rem;
+            font-weight: 500;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.25s;
+        }
+
+        .tb-cart:hover {
+            color: #D4A847;
+        }
+
+        .tb-cart .badge {
+            position: absolute;
+            top: -8px;
+            left: 6px;
+            background: #D4A847;
+            color: #111;
+            font-size: 0.6rem;
+            padding: 2px 5px;
+        }
+
+        .tb-cart-price {
+            color: #D4A847;
+            font-weight: 600;
+        }
+
+        /* WhatsApp btn */
+        .tb-whatsapp {
+            background: #25D366;
+            color: #fff !important;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .tb-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Search icon btn */
+        .tb-search-icon {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 8px;
+            transition: color 0.25s;
+        }
+
+        .tb-search-icon:hover {
+            color: #D4A847;
+        }
+
+        /* Search bar slide */
+        .tb-search-bar {
+            background: #1a1a1a;
+            border-top: 1px solid rgba(212, 168, 71, 0.15);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease;
+        }
+
+        .tb-search-bar.open {
+            max-height: 80px;
+            padding: 12px 0;
+        }
+
+        .tb-search-wrap {
+            display: flex;
+            border: 1px solid rgba(212, 168, 71, 0.3);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .tb-search-wrap input {
+            flex: 1;
+            background: #111;
+            border: none;
+            outline: none;
+            color: #fff;
+            padding: 12px 18px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.88rem;
+        }
+
+        .tb-search-wrap input::placeholder {
+            color: #666;
+        }
+
+        .tb-search-wrap button {
+            background: #D4A847;
+            border: none;
+            color: #111;
+            padding: 12px 20px;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        .tb-search-wrap button:hover {
+            background: #f0c96c;
+        }
+
+        /* Mobile menu bg */
+        @media (max-width: 991.98px) {
+            #mainNav {
+                background: #161616;
+                border-top: 1px solid rgba(212, 168, 71, 0.1);
+                padding: 12px 8px;
+            }
+        }
+
+        /* Hamburger color */
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23D4A847' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* WhatsApp floating */
+        .tb-float-wa {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            z-index: 9999;
+            background: #25D366;
+            color: #fff;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            animation: waPulse 2.5s infinite;
+        }
+
+        @keyframes waPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 4px 35px rgba(37, 211, 102, 0.8);
+            }
+        }
+
+        /* Demo hero so header is visible */
+        .demo-hero {
+            min-height: 100vh;
+            padding-top: 90px;
+
+            /* 👇 Background image with dark overlay */
+          background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("/images/hero.jpg") no-repeat center center/cover;
+           
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .demo-hero h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 300;
+            color: #D4A847;
+            margin-bottom: 12px;
+            /* font-family: 'Pacifico', cursive; */
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .demo-hero p {
+            max-width: 60rem;
+            color: #999;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        /* Buy Cake Button */
+        .buy-cake-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 35px;
+            background: #D4A847;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid #D4A847;
+            box-shadow: 0 4px 15px rgba(212, 168, 71, 0.3);
+        }
+
+        /* Hover Effect */
+        .buy-cake-btn:hover {
+            background: transparent;
+            color: #D4A847;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(212, 168, 71, 0.5);
+        }
+    
